@@ -19,6 +19,14 @@ public class MathArithmeticFactory implements WordFactory {
         return "" + c1;
     }
 
+    public static void setChineseNumber(String[] chineseNumber) {
+        MathArithmeticFactory.chineseNumber = chineseNumber;
+    }
+
+    public static void setOperations(String[] operations) {
+        MathArithmeticFactory.operations = operations;
+    }
+    
     @Override
     public WordBean getNextWord() {
         int n1 = RandUtils.randInt(9) + 1;
